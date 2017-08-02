@@ -1,0 +1,99 @@
+body{
+    padding-bottom: 50px!important;
+}
+
+#mobile_fixed_menu {
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    z-index:99999999;
+    display: none;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    #mobile_fixed_menu {
+        display: block;
+    }
+}
+
+#mobile_fixed_menu:before, #mobile_fixed_menu:after {
+    content: " ";
+    display: table;
+}
+
+.mfm-col-1, .mfm-col-2, .mfm-col-3, .mfm-col-4, .mfm-col-5, .mfm-col-5{
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+.mfm-col-1{
+    width: 100%;
+}
+
+.mfm-col-2{
+    width: 50%;
+}
+
+.mfm-col-3{
+    width: 33.33333333%;
+}
+
+.mfm-col-4{
+    width: 25%;
+}
+
+.mfm-col-5{
+     width: 20%;
+}
+
+.mfm-col-6{
+    width: 16.66666666%;
+}
+
+
+#mobile_fixed_menu a{
+    display: block;
+    height:50px;
+    border-right: 1px solid #ccc;
+}
+
+#mobile_fixed_menu div:last-child a{
+    border-right: 0px;
+}
+
+#mobile_fixed_menu a span{
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#mobile_fixed_menu a .phone{
+    height: 25px;
+    width: 25px;
+    background: url('../images/phone_new.svg');
+    margin-top: 12px;
+}
+
+#mobile_fixed_menu a .email{
+    height: 25px;
+    width: 36px;
+    background: url('../images/mail_new.svg');
+    margin-top: 12px;
+}
+
+#mobile_fixed_menu a .whatsapp{
+    height: 25px;
+    width: 25px;
+    background: url('../images/whatsapp.svg');
+    margin-top: 12px;
+}
+
+#mobile_fixed_menu a .map{
+    height: 25px;
+    width: 18px;
+    background: url('../images/map_new.svg');
+    margin-top: 12px;
+}
