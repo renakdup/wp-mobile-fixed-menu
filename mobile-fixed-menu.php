@@ -4,7 +4,7 @@
  * Plugin Name: Mobile Fixed Menu
  * Plugin URI: https://vk.com/renak
  * Description: Advertising for content FB Instant Articles
- * Version: 0.1
+ * Version: 0.2
  * Author: Andrew Pisarevsky
  * Author Email: renakdup@gmail.com
  * License:

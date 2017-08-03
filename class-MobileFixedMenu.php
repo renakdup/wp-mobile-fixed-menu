@@ -22,13 +22,13 @@ class MobileFixedMenu {
 	}
 
 	// Add style file
-	function register_style() {
+	public function register_style() {
 		wp_register_style( 'mobile-fixed-menu', plugin_dir_url( __FILE__ ) . 'css/mobile-fixed-menu.css', false, '0.1', null );
 		wp_enqueue_style( 'mobile-fixed-menu' );
 	}
 
 	// Menu content
-	function output_frontend_menu( $name ) {
+	public function output_frontend_menu( $name ) {
 		$elements_menu = $this->get_options();
 		$cont_items = $elements_menu[ 'count' ];
 		$elements = $elements_menu['elements'];
